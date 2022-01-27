@@ -1,0 +1,102 @@
+.home{
+  min-height: 1000px;
+}
+.img {
+  margin: auto;
+  border-radius: 20px;
+  width: 70%;
+}
+#btn-a{
+  border: none;
+  background-color: transparent;
+}
+.button {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+.load-button-image{
+  margin-bottom:  4rem !important;
+}
+.div {
+  border: 1px solid gray;
+  display: block;
+  width: 100%;
+}
+.form{
+    display: grid;
+    grid-template-columns: 90% 10% ;
+    margin: 0 auto 2rem;
+}
+.enviar-image{
+    margin-left: 0.5rem;
+}
+.images-grid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.grid-inter-images{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 90% 10%;
+  width: auto;
+  height: 400px;
+  max-height: 400px;
+}
+.file-select {
+  background-color: black;
+  color: aliceblue;
+}
+.load {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: auto;
+  border-left: 4px solid #ecab0f;
+  border-top: 4px solid #ecab0f;
+  border-right: 4px solid #ecab0f;
+  border-bottom: 4px solid #f9f9f9;
+  border-radius: 40px;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360%);
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .button {
+    width: 80%;
+    margin: 0 10% 4rem;
+  }
+  .img {
+    margin: 1rem 10% 1rem;
+    border-radius: 20px;
+    width: 80%;
+    max-height: 500px;
+  }
+  .div {
+    display: block;
+  }
+  .images-grid {
+    display: block;
+  }
+}
+#formFile:focus{
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+

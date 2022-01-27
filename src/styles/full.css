@@ -1,0 +1,67 @@
+.modal-full-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(29, 28, 28, .8) ;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    animation-name: aviso;
+    animation-duration: 1s;
+    min-height: 1100px;
+}
+.full{
+    margin-top: -7rem;
+}
+@keyframes aviso {
+    0% {
+        background-color: rgba(78, 76, 76, .8) ;
+    }
+    100% {
+        background-color: rgba(29, 28, 28, .8) ;
+    }
+
+}
+.full-imagen{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+.img-and-close{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.info-imagen{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    
+}
+.close-view{
+    width: 200%;
+}
+#iden{
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    border-radius: 40px;
+    font-size: 2rem;
+    position: absolute;
+    left: 90px;
+    top: 55px;
+    animation-name: close;
+    animation-duration: 1s;
+}
+@keyframes close {
+    0% {
+        transform: rotate(60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
