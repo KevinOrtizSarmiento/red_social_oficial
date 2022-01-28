@@ -10,10 +10,10 @@ import Nav from "./components/Nav";
 function App() {
   const {currentUser} = useSelector((state) => state.auth)
   return (
-    
+  <div className="app">
     <BrowserRouter>
     <Nav/>
-    <div className="app container">
+    <div className="app-container container">
     
       <Routes>
         <Route path="/" element={currentUser?<Home />:<Login/>} />
@@ -23,6 +23,7 @@ function App() {
       </Routes>
     </div>
     </BrowserRouter>
+    </div>
   );
 }
 

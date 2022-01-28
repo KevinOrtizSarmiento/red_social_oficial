@@ -24,21 +24,25 @@
 }
 .btn-profile{
   border: none;
+  min-height: 200px;
   background-color: transparent;
   border-radius: 160px ;
+  max-height: 300px;
 }
 .img-p{
   margin: auto;
+  max-height: 850px;
 }
 .img-pro{
   border-radius: 160px;
+  max-height: 200px;
   border: 1px solid gray;
 }
 .preview{
-  position: absolute;
+  position: fixed;
   padding-right: 20%;
   padding-left: 20%;
-  padding-top: 6rem;
+  padding-top: 3rem;
   background-color: rgba(152, 165, 169, .7) ;
   padding-bottom: 8rem;
   display: grid;
@@ -47,7 +51,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  min-height: 1100px;
+  min-height: 700px;
 }
 .change-image{
   margin-top: 1rem;

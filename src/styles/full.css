@@ -1,61 +1,79 @@
 .modal-full-image{
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(29, 28, 28, .8) ;
-    z-index: 3;
-    display: grid;
-    grid-template-columns: 80% 20%;
+    padding: auto;
+    background-color: #303030 ;
+    z-index: 1;
     animation-name: aviso;
+    padding: 5rem;
     animation-duration: 1s;
-    min-height: 1100px;
-}
-.full{
-    margin-top: -7rem;
-}
-@keyframes aviso {
-    0% {
-        background-color: rgba(78, 76, 76, .8) ;
-    }
-    100% {
-        background-color: rgba(29, 28, 28, .8) ;
-    }
-
-}
-.full-imagen{
-    width: 95%;
-    height: 95%;
-    margin: auto;
-}
-.img-and-close{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 100%;
-}
-.info-imagen{
-    width: 100%;
-    height: 100%;
-    background-color: aliceblue;
+    min-height: auto;
     
 }
-.close-view{
-    width: 200%;
+.grid{
+    min-height: 700px;
+    width: 70%;
+    margin: 2.5rem auto 0;
+    display: grid;
+    grid-template-columns: 5% 65% 30%;
+}
+.info-imagen::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .info-imagen::-webkit-scrollbar-track {
+    background: #cecdcd;        /* color of the tracking area */
+  }
+  
+  .info-imagen::-webkit-scrollbar-thumb {
+    background-color: #888787;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #cecdcd;  /* creates padding around scroll thumb */
+  }.info-imagen::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .info-imagen::-webkit-scrollbar-track {
+    background: #cecdcd;        /* color of the tracking area */
+  }
+  
+  .info-imagen::-webkit-scrollbar-thumb {
+    background-color: #888787;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #cecdcd;  /* creates padding around scroll thumb */
+  }
+.info-imagen{
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    height: 650px;
+    background-color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}
+.imview{
+    margin: auto;
+    max-height: 800px;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
 }
 #iden{
+    top: 0;
     color: aliceblue;
     background-color: transparent;
     border: none;
     border-radius: 40px;
     font-size: 2rem;
-    position: absolute;
-    left: 90px;
-    top: 55px;
     animation-name: close;
     animation-duration: 1s;
+}
+.b-close{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
 }
 @keyframes close {
     0% {
@@ -63,5 +81,26 @@
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .grid{
+        display: block;
+        width: 100%;
+    }
+    .modal-full-image{
+        padding: 0;
+    }
+    .info-imagen{
+        margin-top: 2rem;
+        height: 300px;
+    }
+    .imview{
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+    }
+    .b-close{
+        display: block;
     }
 }

@@ -1,10 +1,11 @@
 .home{
-  min-height: 1000px;
+  min-height: 200px;
 }
 .img {
   margin: auto;
   border-radius: 20px;
   width: 70%;
+  max-height: 95%;
 }
 #btn-a{
   border: none;
@@ -40,6 +41,7 @@
   grid-template-columns: 100%;
   grid-template-rows: 90% 10%;
   width: auto;
+  margin: 1rem;
   height: 400px;
   max-height: 400px;
 }
@@ -80,7 +82,7 @@
     margin: 1rem 10% 1rem;
     border-radius: 20px;
     width: 80%;
-    max-height: 500px;
+    max-height: 95%;
   }
   .div {
     display: block;
